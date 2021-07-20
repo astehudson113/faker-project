@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <style>
+         h2{
+             color:rgb(190, 134, 29);
+         }
+
+
+      </style>
+
+
+  </head>
+  <body>
+      <center>
+      <div style="border-radius:10; background-color:cadetblue; text-align:center; border:black solid;">    
+      <h1 style="color:rgb(220, 220, 228)"><font size="6" face="Algerian">STUDENT RECORD</font></h1>
+      <hr style="color: crimson;">
+      </div>
+      </center>
+      {% for x in stud %}
+      <div style="border:6px solid">
+        <h2>Name:{{x.name}}</h2>
+        <h2>roll:{{x.roll}}</h2>
+        <h2>marks:{{x.marks}}</h2>
+        <h2>dob:{{x.dob}}</h2>
+        <h2>email:{{x.email}}</h2>
+      </div>
+        
+    
+      {% endfor %}
+      
+      
+    
+  </body> 
+  </html> 
+
+
+</html>
